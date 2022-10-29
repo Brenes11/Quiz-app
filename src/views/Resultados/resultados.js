@@ -16,7 +16,7 @@ export default function Resultados({ route, navigation }) {
   })
   return (
     <View style={styles.container}>
-      <Text>resultados</Text>
+      <Text style={styles.text}>Tus Resultados</Text>
       <DataTable>
         <DataTable.Header>
         <DataTable.Title style={styles.cell}>Pregunta</DataTable.Title>
@@ -32,10 +32,11 @@ export default function Resultados({ route, navigation }) {
       </DataTable.Row>
       ))}
       </DataTable>
-      <Text>Puntuación final: {resultado} / {total}</Text>
+      <Text style={styles.text}>Puntuación final: {resultado} / {total}</Text>
+
       <Button
-        title="inicio"
-        onPress={() => navigation.navigate('Home')}
+        title="Regresar al inicio"
+        onPress={() => navigation.navigate('Index')}
       />
     </View>
   );
@@ -50,5 +51,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   cell:{height:20},
-  answer:{maxWidth:170}
+  answer:{maxWidth:170},
+  text:{fontSize:24}
 });
