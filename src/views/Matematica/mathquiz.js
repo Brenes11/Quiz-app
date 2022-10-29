@@ -72,8 +72,7 @@ export default function MathQuiz ({ navigation }) {
           })
           
           
-          
-          console.log(results);
+          //asdkhasldkajlsdkjasd
           navigation.navigate('Resultados', {
             resultados: results
           })
