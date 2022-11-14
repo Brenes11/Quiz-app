@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Index from './src/views/Index/index';
 import Resultados from './src/views/Resultados/resultados';
 import QuizCiencias from './src/views/Ciencias/cienciasquiz';
+import QuizLenguaje from './src/views/Lenguaje/lenguajequiz';
 import MathQuiz from './src/views/Matematica/mathquiz';
 import { backgroundColor } from 'styled-system';
 
@@ -17,6 +18,7 @@ export default function App() {
           <Stack.Screen name ="Index" component={Index}/>
           <Stack.Screen name ="Resultados" component={Resultados}/>
           <Stack.Screen name ="QuizCiencias" component={QuizCiencias}/>
+          <Stack.Screen name ="QuizLenguaje" component={QuizLenguaje}/>
           <Stack.Screen name ="MathQuiz" component={MathQuiz} options={{title: 'Test de matemáticas'}}/>
         </Stack.Navigator>
       </NavigationContainer>

@@ -13,6 +13,10 @@ export default function Index({navigation}) {
         title="Quiz de matemáticas"
         onPress={()=>navigation.navigate('MathQuiz')}
         />
+        <Button style={styles.button}
+        title="Quiz de Lenguaje"
+        onPress={()=>navigation.navigate('QuizLenguaje')}
+        />
     </View>
   );
 }
