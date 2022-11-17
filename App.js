@@ -6,6 +6,7 @@ import Index from './src/views/Index/index';
 import Resultados from './src/views/Resultados/resultados';
 import QuizCiencias from './src/views/Ciencias/cienciasquiz';
 import QuizLenguaje from './src/views/Lenguaje/lenguajequiz';
+import QuizSociales from './src/views/Sociales/socialesquiz';
 import MathQuiz from './src/views/Matematica/mathquiz';
 import { backgroundColor } from 'styled-system';
 
@@ -19,6 +20,7 @@ export default function App() {
           <Stack.Screen name ="Resultados" component={Resultados}/>
           <Stack.Screen name ="QuizCiencias" component={QuizCiencias}/>
           <Stack.Screen name ="QuizLenguaje" component={QuizLenguaje}/>
+          <Stack.Screen name ="QuizSociales" component={QuizSociales}/>
           <Stack.Screen name ="MathQuiz" component={MathQuiz} options={{title: 'Test de matemáticas'}}/>
         </Stack.Navigator>
       </NavigationContainer>
